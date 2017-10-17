@@ -16,6 +16,9 @@ jobs:
           key: scct-sbt-dep-v1-{{ checksum "build.sbt" }}
 
       - run:
+          name: Exporting
+          command: export CODACY_PROJECT_TOKEN=04381814208948339156d77fb7b951cc
+      - run:
           name : Compile Scala Code (Downloading dependencies)
           command: sbt compile
 
