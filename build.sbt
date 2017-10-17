@@ -33,3 +33,5 @@ coverageHighlighting := true
 publishArtifact in Test := false
 
 parallelExecution in Test := false
+
+coverageEnabled := true

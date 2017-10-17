@@ -24,6 +24,15 @@ jobs:
             - ~/.ivy2
           key: scct-sbt-dep-v1-{{ checksum "build.sbt" }}
 
-      - run:
-          name : Running Scala Tests
-          command: sbt '; eval System.setProperty("production","true") ; test'
+#      - run:
+#          name : Running Scala Tests
+#          command: sbt '; eval System.setProperty("production","true") ; test'
+
+    test:
+      override:
+        - sbt coverage test
+        - sbt coverageReport
+      post:
+        - mkdir -p $CIRCLE_ARTIFACTS/scala-2.10
+        - mv target/scala-2.10/coverage-report  $CIRCLE_ARTIFACTS/scala-2.10/coverage-report
+        - mv target/scala-2.10/scoverage-report $CIRCLE_ARTIFACTS/scala-2.10/scoverage-report
