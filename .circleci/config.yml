@@ -28,6 +28,10 @@ jobs:
 #          name : Running Scala Tests
 #          command: sbt '; eval System.setProperty("production","true") ; test'
 
+    dependencies:
+      override:
+        - sbt coverage test:compile
+
     test:
       override:
         - sbt coverage test
