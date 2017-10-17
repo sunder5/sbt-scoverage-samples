@@ -1,6 +1,7 @@
 scoverage-samples
 ==================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6550db23f90f44b39f63e3e7483a08d6)](https://www.codacy.com/app/sunder5/sbt-scoverage-samples?utm_source=github.com&utm_medium=referral&utm_content=sunder5/sbt-scoverage-samples&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/scoverage/sbt-scoverage-samples.svg?branch=master)](https://travis-ci.org/scoverage/sbt-scoverage-samples)
 [![CircleCI](https://circleci.com/gh/sunder5/sbt-scoverage-samples.svg?style=svg)](https://circleci.com/gh/sunder5/sbt-scoverage-samples)
 
