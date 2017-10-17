@@ -1,0 +1,27 @@
+version: 2.0
+
+jobs:
+  build:
+    working_directory: ~/scct
+
+    environment:
+      JVM_OPTS: -Xmx3200m
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: scct-sbt-dep-v1-{{ checksum "build.sbt" }}
+
+      - run:
+          name : Compile Scala Code (Downloading dependencies)
+          command: sbt compile
+
+      - save_cache:
+          paths:
+            - ~/.ivy2
+          key: scct-sbt-dep-v1-{{ checksum "build.sbt" }}
+
+      - run:
+          name : Running Scala Tests
+          command: sbt '; eval System.setProperty("production","true") ; test'
