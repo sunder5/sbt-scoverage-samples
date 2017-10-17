@@ -2,6 +2,8 @@ scoverage-samples
 ==================
 
 [![Build Status](https://travis-ci.org/scoverage/sbt-scoverage-samples.svg?branch=master)](https://travis-ci.org/scoverage/sbt-scoverage-samples)
+[![CircleCI](https://circleci.com/gh/sunder5/sbt-scoverage-samples.svg?style=svg)](https://circleci.com/gh/sunder5/sbt-scoverage-samples)
+
 
 A sample program for demonstrating scoverage's code coverage. This sample is an akka based mock quote engine. Note: This project deliberately doesn't have 100% coverage for demonstration purposes.
 
