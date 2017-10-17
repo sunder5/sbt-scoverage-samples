@@ -31,3 +31,7 @@ jobs:
       - run:
           name : Generating code coverage report
           command : sbt coverageReport
+
+      - run:
+          name : Make a fail
+          command : bash exit 1
