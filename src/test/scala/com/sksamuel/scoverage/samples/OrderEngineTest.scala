@@ -7,7 +7,7 @@ import akka.testkit.TestProbe
 /** @author Stephen Samuel */
 class OrderEngineTest extends FlatSpec with OneInstancePerTest {
 
-  val quote = SpotQuote(
+  /*val quote = SpotQuote(
     Instrument("CVX", "Chevron"),
     Currency("USD"),
     BigDecimal.valueOf(14.56),
@@ -35,7 +35,7 @@ class OrderEngineTest extends FlatSpec with OneInstancePerTest {
     orderEngine ! quote
     orderEngine ! req
     creditEngine.expectMsgType[CreditRequest]
-  }
+  }*/
 
 
 }
