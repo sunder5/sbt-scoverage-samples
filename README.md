@@ -3,7 +3,7 @@ scoverage-samples
 
 [![Build Status](https://travis-ci.org/scoverage/sbt-scoverage-samples.svg?branch=master)](https://travis-ci.org/scoverage/sbt-scoverage-samples)
 [![CircleCI](https://circleci.com/gh/sunder5/sbt-scoverage-samples.svg?style=svg)](https://circleci.com/gh/sunder5/sbt-scoverage-samples)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6550db23f90f44b39f63e3e7483a08d6)](https://www.codacy.com/app/sunder5/sbt-scoverage-samples?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sunder5/sbt-scoverage-samples&amp;utm_campaign=Badge_Grade)
+[![codecov.io](https://codecov.io/github/sunder5/sbt-scoverage-samples/coverage.svg?branch=master)](https://codecov.io/github/sunder5/sbt-scoverage-samples?branch=master)
 
 
 A sample program for demonstrating scoverage's code coverage. This sample is an akka based mock quote engine. Note: This project deliberately doesn't have 100% coverage for demonstration purposes.
