@@ -29,7 +29,7 @@ jobs:
 
       - run:
           name : Running scala tests with coverage
-          command: sbt coverage test
+          command: sbt '; eval System.setProperty("production","true") ; coverage test'
 
       - run:
           name : Generating code coverage report
