@@ -34,3 +34,7 @@ jobs:
       - run:
           name : Generating code coverage report
           command : sbt coverageReport
+
+      - run:
+          name: Uploading report to CodeCov.io
+          command: bash <(curl -s https://codecov.io/bash)
